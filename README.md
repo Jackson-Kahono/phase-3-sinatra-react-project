@@ -1,7 +1,6 @@
 # REAL ESTATE PROJECT
 ## Authors
-[Lynnmwaniki](https://github.com/Lynnmwaniki/real-estate-project, https://github.com/Jackson-Kahono/phase-3-sinatra-react-project/tree/main)
-[Jackson-Kahono](https://github.com/Jackson-Kahono/phase-3-sinatra-react-project/tree/main, https://github.com/Jackson-Kahono/realtors-frontend/tree/master)
+[Lynnmwaniki](https://github.com/Lynnmwaniki/real-estate-project), [Jackson-Kahono](https://github.com/Jackson-Kahono/phase-3-sinatra-react-project)
 
 
 
