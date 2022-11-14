@@ -69,7 +69,16 @@ class ApplicationController < Sinatra::Base
 
 
   get "/myproperties/:id" do
-    Property.where(owner: params["id"]).to_json
+    Property.where(owner_id: params["id"]).to_json
+  end
+
+  patch "/properties/:id" do
+    property = Property.where(id: params["id"]).first
+    if property.update(params)
+      property.to_json
+    else
+      halt 422
+    end
   end
 
 
@@ -81,6 +90,21 @@ class ApplicationController < Sinatra::Base
     else
       halt 422
     end
+  end
+
+  get "/mine/:id" do
+    Property.where(owner: params["id"]).to_json
+  end
+
+  get "/search" do
+    purpose = params["purpose"]
+    price_min= params["price_min"]
+    price_max= params["price_max"]
+    baths_min = params["baths"]
+    area_max = params["area"]
+    rooms_min = params["rooms"]
+
+    Property.where("purpose = ? AND price >= ? AND price <= ? AND baths >= ? AND area <= ? AND rooms >= ?", purpose, price_min, price_max, baths_min, area_max, rooms_min).to_json
   end
 
   delete "/properties/:id" do
@@ -122,7 +146,7 @@ class ApplicationController < Sinatra::Base
     else
       halt 401
     end
-    end
+  end
 
   delete "/clients/:id" do
     client = Client.where(id: params["id"]).first

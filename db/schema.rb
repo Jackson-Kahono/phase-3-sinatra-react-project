@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2022_11_10_192926) do
     t.string "photos"
     t.integer "agency_id"
     t.integer "client_id"
+    t.integer "owner_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "agencies_id"

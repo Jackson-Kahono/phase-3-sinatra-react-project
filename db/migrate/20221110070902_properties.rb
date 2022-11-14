@@ -18,6 +18,7 @@ class Properties < ActiveRecord::Migration[6.1]
       t.string :photos
       t.integer :agency_id
       t.integer :client_id
+      t.integer :owner_id
 
       t.timestamps
       t.references :agencies, :clients, foreign_key:true
