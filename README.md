@@ -41,7 +41,7 @@
 There are no known bugs
 
 ## Contact information
-For any questions or contributions kindly contact us at [mwanikilynn8@gmail.com] [jacksonkahono@gmail.com]
+For any questions or contributions kindly contact us at [mwanikilynn8@gmail.com](mwanikilynn8@gmail.com) [jacksonkahono@gmail.com](jacksonkahono@gmail.com)
 
 ## License
 Copyright (c) 2022 
