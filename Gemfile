@@ -28,16 +28,16 @@ gem "sinatra-activerecord", "~> 2.0"
 # https://github.com/ruby/rake
 gem "rake", "~> 13.0"
 
-gem "faker"
+# gem "faker"
 # Provides functionality to interact with a SQLite3 database
-gem "sqlite3", "~> 1.4"
+# gem "sqlite3", "~> 1.4"
 
 # Require all files in a folder
 gem "require_all", "~> 3.0"
 
 # These gems will only be used when we are running the application locally
 group :development do
-  gem "pry", "~> 0.14.1"
+  # gem "pry", "~> 0.14.1"
 
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun
@@ -50,4 +50,14 @@ group :test do
   gem "rack-test", "~> 1.1"
   gem "rspec", "~> 3.10"
   gem "rspec-json_expectations", "~> 2.2"
+end
+
+group :development do
+  gem "sqlite3"
+  gem "pry"
+  gem "tux"
+  gem "faker"
+end
+group :production do
+  gem "pg"
 end
