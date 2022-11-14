@@ -1,6 +1,6 @@
 # REAL ESTATE PROJECT
 ## Authors
-[Lynnmwaniki](https://github.com/Lynnmwaniki/real-estate-project), [Jackson-Kahono](https://github.com/Jackson-Kahono/phase-3-sinatra-react-project)
+[Lynnmwaniki](https://github.com/Lynnmwaniki), [Jackson-Kahono](https://github.com/Jackson-Kahono)
 
 
 
