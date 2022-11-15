@@ -16,7 +16,7 @@
             purpose,
             furnishingStatus,
             amenities,
-            photos
+            photos.
       }
       client{
             name,
